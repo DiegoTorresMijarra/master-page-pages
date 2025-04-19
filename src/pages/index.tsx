@@ -26,12 +26,12 @@ const Home: React.FC = () => {
             Impulsa tu negocio con una presencia online profesional, diseñada específicamente para valorar y mostrar tus productos artesanales.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/ProductsPage"
-              className="px-6 py-3 bg-artisan-primary text-white rounded-md hover:bg-artisan-secondary transition-colors font-medium"
-            >
-              Ver Productos
-            </Link>
+            {/*<Link*/}
+            {/*  href="/ProductsPage"*/}
+            {/*  className="px-6 py-3 bg-artisan-primary text-white rounded-md hover:bg-artisan-secondary transition-colors font-medium"*/}
+            {/*>*/}
+            {/*  Ver Productos*/}
+            {/*</Link>*/}
             <Link
               href="/Contact"
               className="px-6 py-3 bg-white text-artisan-primary border border-artisan-primary rounded-md hover:bg-artisan-light transition-colors font-medium"

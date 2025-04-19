@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -58,7 +58,7 @@ interface FooterLinkProps {
 const FooterLink: React.FC<FooterLinkProps> = ({ to, children }) => {
   return (
     <li>
-      <Link to={to} className="text-artisan-muted hover:text-white transition-colors">
+      <Link href={to} className="text-artisan-muted hover:text-white transition-colors">
         {children}
       </Link>
     </li>

@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   // swcMinify: true,
-  // transpilePackages: ["primereact"],
+  transpilePackages: ["primereact"],
 };
 
 export default nextConfig;
