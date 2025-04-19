@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 39 38% 97%;
+    --foreground: 33 15% 15%;
+
+    --card: 39 30% 95%;
+    --card-foreground: 33 15% 15%;
+
+    --popover: 39 30% 95%;
+    --popover-foreground: 33 15% 15%;
+
+    --primary: 33 55% 35%;
+    --primary-foreground: 39 30% 95%;
+
+    --secondary: 30 35% 49%;
+    --secondary-foreground: 39 30% 95%;
+
+    --muted: 39 20% 88%;
+    --muted-foreground: 33 10% 45%;
+
+    --accent: 142 24% 33%;
+    --accent-foreground: 39 30% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 39 30% 95%;
+
+    --border: 33 15% 80%;
+    --input: 33 15% 80%;
+    --ring: 33 55% 35%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 39 30% 97%;
+    --sidebar-foreground: 33 15% 15%;
+    --sidebar-primary: 33 55% 35%;
+    --sidebar-primary-foreground: 39 30% 95%;
+    --sidebar-accent: 142 24% 33%;
+    --sidebar-accent-foreground: 39 30% 95%;
+    --sidebar-border: 33 15% 80%;
+    --sidebar-ring: 33 55% 35%;
+  }
+
+  .dark {
+    --background: 33 15% 15%;
+    --foreground: 39 30% 95%;
+
+    --card: 33 15% 20%;
+    --card-foreground: 39 30% 95%;
+
+    --popover: 33 15% 20%;
+    --popover-foreground: 39 30% 95%;
+
+    --primary: 33 55% 40%;
+    --primary-foreground: 39 30% 95%;
+
+    --secondary: 30 35% 35%;
+    --secondary-foreground: 39 30% 95%;
+
+    --muted: 33 15% 25%;
+    --muted-foreground: 33 10% 70%;
+
+    --accent: 142 24% 25%;
+    --accent-foreground: 39 30% 95%;
+
+    --destructive: 0 62.8% 40.6%;
+    --destructive-foreground: 39 30% 95%;
+
+    --border: 33 15% 30%;
+    --input: 33 15% 30%;
+    --ring: 33 55% 40%;
+
+    --sidebar-background: 33 15% 20%;
+    --sidebar-foreground: 39 30% 95%;
+    --sidebar-primary: 33 55% 40%;
+    --sidebar-primary-foreground: 39 30% 95%;
+    --sidebar-accent: 142 24% 25%;
+    --sidebar-accent-foreground: 39 30% 95%;
+    --sidebar-border: 33 15% 30%;
+    --sidebar-ring: 33 55% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased font-sans;
+    background-image: url('/images/subtle-texture.png');
+    background-repeat: repeat;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  .artisan-texture {
+    @apply bg-texture bg-repeat;
+  }
+
+  .artisan-card {
+    @apply bg-white/90 backdrop-blur-sm border border-artisan-muted rounded-lg shadow-md transition-all hover:shadow-lg;
+  }
+
+  .artisan-button {
+    @apply px-4 py-2 bg-artisan-primary text-white rounded-md hover:bg-artisan-secondary transition-colors font-medium;
+  }
+
+  .artisan-input {
+    @apply border border-artisan-muted rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-artisan-primary;
+  }
+
+  .section-padding {
+    @apply py-16 px-4 md:px-8 lg:px-16;
+  }
+
+  .fade-in {
+    @apply animate-fade-in;
+  }
+
+  .slide-in {
+    @apply animate-slide-in;
+  }
+}
